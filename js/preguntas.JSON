@@ -1,0 +1,19 @@
+[{
+        "id": 1,
+        "descripcion": "¿Qué día es hoy?",
+        "fuente": "Dios",
+        "respuesta": 18
+    },
+    {
+        "id": 2,
+        "descripcion": "¿Cuántos dedos tengos?",
+        "fuente": "lalal",
+        "respuesta": 20
+    },
+    {
+        "id": 3,
+        "descripcion": "¿Cuántos gatos son suficientes?",
+        "fuente": "lelele",
+        "respuesta": "infinito"
+    }
+]

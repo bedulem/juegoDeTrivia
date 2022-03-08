@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 6, 52);
+    font-family: 'Roboto Slab', serif;
+    height: 100vh;
+}
+
+header {
+    background-color: rgb(255, 180, 23);
+}
+
+header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px;
+    height: 60px;
+    font-size: 20px;
+}
+
+header .nav-bar .fa-house,
+header .nav-bar .fa-gear,
+.fa-circle-chevron-left {
+    color: white;
+}
+
+header .nav-bar h2 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+}
+
+main h1 {
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+    color: rgb(255, 180, 23);
+}
+
+main .cont-tematicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+main .cont-tematicas a {
+    height: 50px;
+    width: 200px;
+    margin: 16px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: rgb(0, 6, 52);
+    background-color: white;
+    border: none;
+}
+
+main .cont-tematicas a:last-child {
+    background-color: rgb(255, 180, 23);
+}
+
+main .cont-general-preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .cont-preguntas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+main .cont-preguntas .numero {
+    text-align: center;
+    font-weight: bold;
+}
+
+main .cont-preguntas .fuente {
+    text-align: right;
+    font-weight: lighter;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+footer {
+    position: fixed;
+    background-color: rgb(255, 180, 23);
+    padding: 5px;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    bottom: 0px;
+}
