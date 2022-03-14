@@ -20,4 +20,27 @@ const preguntaP = document.getElementById("pregunta");
 
 // generales.llamarPregunta(preguntas);
 // // preguntaP.innerHTML = `<p>${generales.llamarPregunta(preguntas)}</p>`
-preguntaP.innerHTML = `laaaaaaaaaaaaaaaaaaaa`
+// preguntaP.innerHTML = `laaaaaaaaaaaaaaaaaaaa`
+
+
+
+// import jsonData from './preguntas.json' ; 
+// console.log(jsonData);
+
+
+fetch('./js/preguntas.json')
+.then(results=>results.json())
+// .then(console.log)
+
+let pregunta1 = fetch('./js/preguntas.json')
+.then(results=>results.json())
+
+
+
+preguntaP.innerHTML = pregunta1[0]
+
+console.log(pregunta1.catch(0)) 
+
+for (const key in pregunta1) {
+    console.log(pregunta1[key]) 
+} 
