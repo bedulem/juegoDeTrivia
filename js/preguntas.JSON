@@ -1,19 +1,19 @@
-[{
+{"preguntas" :[{
         "id": 1,
-        "descripcion": "¿Qué día es hoy?",
-        "fuente": "Dios",
-        "respuesta": 18
+        "descripcion": "¿En qué año se publicó la primera parte de Don Quijote de la Mancha?",
+        "fuente": "luuu",
+        "respuesta": "En 1605. La segunda parte se publicó en 1615, poco antes de morir Cervantes."
     },
     {
         "id": 2,
-        "descripcion": "¿Cuántos dedos tengos?",
+        "descripcion": "¿Cuántas válvulas tiene el corazón humano?",
         "fuente": "lalal",
-        "respuesta": 20
+        "respuesta": "Son cuatro: mitral, tricúspide, pulmonar y aórtica."
     },
     {
         "id": 3,
-        "descripcion": "¿Cuántos gatos son suficientes?",
-        "fuente": "lelele",
-        "respuesta": "infinito"
+        "descripcion": "¿En qué año se estrenó la película Titanic?",
+        "fuente": "lel",
+        "respuesta": "En 1997. Fue un éxito desde su estreno, tanto en la taquilla como frente la crítica (se alzó con 11 Premios Óscar)."
     }
-]
+]}

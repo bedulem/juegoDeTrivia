@@ -47,6 +47,7 @@ main .cont-tematicas {
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+
 }
 
 main .cont-tematicas a {
@@ -60,17 +61,22 @@ main .cont-tematicas a {
     color: rgb(0, 6, 52);
     background-color: white;
     border: none;
+
 }
 
 main .cont-tematicas a:last-child {
     background-color: rgb(255, 180, 23);
+
 }
 
 main .cont-general-preguntas {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 90vh;
+    justify-content: space-between;
 }
+
 
 main .cont-preguntas {
     display: flex;
@@ -84,17 +90,26 @@ main .cont-preguntas {
     margin-top: 50px;
 }
 
-main .cont-preguntas .numero {
-    text-align: center;
-    font-weight: bold;
+main .cont-preguntas p{
+    padding: 0px 20px;
 }
 
-main .cont-preguntas .fuente {
+main .cont-preguntas #numero {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+main .cont-preguntas #fuente {
     text-align: right;
     font-weight: lighter;
     font-style: italic;
     margin-right: 10px;
+    margin-bottom: 10px;
+    
 }
+
+
 
 footer {
     position: fixed;

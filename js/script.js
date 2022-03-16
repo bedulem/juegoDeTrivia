@@ -1,46 +1,27 @@
-// const lecturaYEscritura = require("./lecturaEscritura");
-// const preguntas = lecturaYEscritura.leerJson('preguntas');
 const preguntaP = document.getElementById("pregunta");
+const numero = document.getElementById("numero");
+const fuente = document.getElementById("fuente");
+
+const myRequest = new Request('./js/preguntas.json');
 
 
 
-// let generales = {
-//     preguntas,
-//     llamarPregunta: function(arr) {
-//         arr.forEach(pregunta => {
-//             // console.log(`id:${pregunta.id}, pregunta ${pregunta.desripcion}, "Fuente": " ${pregunta.fuente}`)
-//             preguntaP.innerHTML = `<p>${pregunta}</p>`
+fetch(myRequest)
+.then(response => response.json())
+.then(data => {
 
-//         });
-//     },
-//     BuscarPorID: function(id) {
-//         return this.pregunta.find(pregunta => pregunta.id === id)
-//     }
-// };
+    console.log(data.preguntas[0].descripcion)
+    console.log(data.preguntas[0].id)
+    
+    // for (const pregunta of data.preguntas){
+    //     let listItem = document.createElement("p");
+    //     listItem.textContent = pregunta.descripcion;
+    //     preguntaP.appendChild(listItem);
+        
+    // }
 
-// generales.llamarPregunta(preguntas);
-// // preguntaP.innerHTML = `<p>${generales.llamarPregunta(preguntas)}</p>`
-// preguntaP.innerHTML = `laaaaaaaaaaaaaaaaaaaa`
-
-
-
-// import jsonData from './preguntas.json' ; 
-// console.log(jsonData);
-
-
-fetch('./js/preguntas.json')
-.then(results=>results.json())
-// .then(console.log)
-
-let pregunta1 = fetch('./js/preguntas.json')
-.then(results=>results.json())
-
-
-
-preguntaP.innerHTML = pregunta1[0]
-
-console.log(pregunta1.catch(0)) 
-
-for (const key in pregunta1) {
-    console.log(pregunta1[key]) 
-} 
+    preguntaP.innerHTML =data.preguntas[0].descripcion;
+    numero.innerText =data.preguntas[0].id;
+    fuente.innerText =data.preguntas[0].fuente;
+})
+.catch(console.error);
